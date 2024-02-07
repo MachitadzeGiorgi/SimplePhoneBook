@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PhoneBook</title>
+    <link rel="shortcut icon" href="./IMG/Phoneicon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>PhoneBook</h1>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>სახელი, გვარი</th>
+            <th>ტელეფონის ნომერი</th>
+            <th>ელ-ფოსტა</th>
+            <th>ქალაქი</th>
+            <th>კატეგორია</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" id="Nameandsurname" /></td>
+            <td><input type="number" /></td>
+            <td><input type="email" /></td>
+            <td><input type="text" id="City" /></td>
+            <td>
+              <select name="category" required>
+                <option value="აირჩიე" selected>აირჩიე</option>
+                <option value="ოჯახი">ოჯახი</option>
+                <option value="მეგობრები">მეგობრები</option>
+                <option value="სამსახური">სამსახური</option>
+                <option value="სხვა">სხვა</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="Savedlist">
+        <h2>Saved Contacts:</h2>
+        <ol></ol>
+      </div>
+      <button id="Savebtn">Save</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
